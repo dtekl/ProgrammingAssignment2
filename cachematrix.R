@@ -6,7 +6,7 @@
 ##the cacheSolve computed inverse of the original matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
-	i <- NULL
+     i <- NULL
      set <- function(y) {
           x <<- y
           i <<- NULL
@@ -27,7 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ##later lookup as well as returning the value
 
 cacheSolve <- function(x, ...) {
-	i <- x$getinv()
+     i <- x$getinv()
      if(!is.null(i)) {
           message("getting cached data")
           return(i)
